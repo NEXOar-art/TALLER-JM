@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Nombre del taller actualizado en la descripción -->
-    <meta name="description" content="LS Taller - Diagnóstico Automotriz Computarizado y Mecánica Integral. Turnos online rápidos.">
-    <!-- Nombre del taller actualizado en el título -->
-    <title>LS Taller | Diagnóstico del Automotor</title>
-    
-    <!-- Tailwind CSS (CDN para rendimiento y estilos modernos) -->
+    <meta name="description" content="TALLER MECANICO ALBERO E HIJO - Diagnóstico Automotriz Computarizado y Mecánica Integral. Turnos online rápidos.">
+    <title>TALLER MECANICO ALBERO E HIJO | Diagnóstico del Automotor</title>
+   
+    <!-- Tailwind CSS (CDN) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Roboto para lectura, Rajdhani para títulos agresivos/técnicos -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
     <script>
         tailwind.config = {
             theme: {
@@ -24,9 +21,9 @@
                         display: ['Rajdhani', 'sans-serif'],
                     },
                     colors: {
-                        jmf: { // Colores corporativos
-                            red: '#DC2626', // Rojo agresivo
-                            dark: '#111827', // Negro/Gris muy oscuro
+                        jmf: {
+                            red: '#DC2626',
+                            dark: '#111827',
                             light: '#F3F4F6',
                         }
                     },
@@ -37,15 +34,13 @@
             }
         }
     </script>
-    
+   
     <style>
-        /* Optimizaciones de rendimiento visual */
         .glass-effect {
             background: rgba(17, 24, 39, 0.85);
             backdrop-filter: blur(10px);
         }
-        
-        /* 1. Animación suave para el indicador de estado (Pulse dot) */
+       
         .pulse-dot {
             animation: pulse-animation 2s infinite;
         }
@@ -53,12 +48,10 @@
             0% { box-shadow: 0 0 0 0px rgba(74, 222, 128, 0.7); }
             100% { box-shadow: 0 0 0 10px rgba(74, 222, 128, 0); }
         }
-
-        /* 2. Checkmark validación */
+       
         .input-valid { border-color: #22c55e !important; background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%2322c55e'%3e%3cpath fill-rule='evenodd' d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z' clip-rule='evenodd'/%3e%3c/svg%3e"); background-repeat: no-repeat; background-position: right 0.5rem center; background-size: 1.5em 1.5em; }
         .input-invalid { border-color: #ef4444 !important; }
-
-        /* 3. Animación de Entrada (Fade-in-up) para los elementos del Hero */
+       
         .fade-in-up {
             opacity: 0;
             transform: translateY(20px);
@@ -67,8 +60,7 @@
         @keyframes fadeInUp {
             to { opacity: 1; transform: translateY(0); }
         }
-
-        /* 4. Pulso Suave para el Título CTA (Llama la atención en el Hero) */
+       
         .pulse-text {
             animation: pulse-text-animation 4s infinite cubic-bezier(0.4, 0, 0.6, 1);
         }
@@ -76,82 +68,66 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.8; }
         }
-
-        /* 5. Estilo para la imagen de Parallax */
+       
         .parallax-image {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.1s ease-out; /* Transición para que el movimiento sea suave */
+            transition: transform 0.1s ease-out;
         }
-        
-        /* 6. Estilo para el carrusel de testimonios (permite el scroll horizontal y oculta la barra) */
+       
         .testimonial-carousel {
             overflow-x: auto;
             scroll-snap-type: x mandatory;
             -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; /* Firefox */
+            scrollbar-width: none;
         }
         .testimonial-carousel::-webkit-scrollbar {
-            display: none; /* Chrome, Safari, Opera */
+            display: none;
         }
         .testimonial-card {
             scroll-snap-align: center;
             flex-shrink: 0;
-            width: 90%; /* Ancho en mobile */
+            width: 90%;
         }
         @media (min-width: 768px) {
             .testimonial-card {
-                width: calc(33.333% - 1.333rem); /* Ancho en desktop para 3 por fila */
+                width: calc(33.333% - 1.333rem);
             }
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased relative">
-
     <!-- NAVBAR FIXED -->
     <nav class="fixed w-full z-50 top-0 glass-effect border-b border-gray-800">
         <div class="container mx-auto px-4 h-16 flex justify-between items-center">
-            
-            <!-- Contenedor Izquierdo: Logo y Navegación -->
             <div class="flex items-center gap-6">
-                <!-- Logo: Nombre Actualizado a Taller JM -->
                 <a href="#" class="flex items-center gap-2 group">
                     <div class="bg-jmf-red text-white p-2 rounded transform group-hover:skew-x-[-10deg] transition">
                         <i class="fa-solid fa-wrench text-xl"></i>
                     </div>
                     <div class="leading-tight">
-                        <span class="block font-display font-bold text-2xl text-white tracking-wide uppercase">LS Taller </span>
+                        <span class="block font-display font-bold text-2xl text-white tracking-wide uppercase">TALLER MECANICO ALBERO E HIJO</span>
                         <span class="block text-[10px] text-gray-400 font-bold tracking-widest uppercase">Diagnóstico del Automotor</span>
                     </div>
                 </a>
-
-                <!-- Enlaces de navegación (Desktop Only) -->
                 <div class="hidden md:flex items-center gap-6">
                     <a href="#asesoramiento" class="text-white hover:text-jmf-red transition font-sans text-sm font-medium">Asesoramiento</a>
                     <a href="#diagnostico" class="text-white hover:text-jmf-red transition font-sans text-sm font-medium">Pre-Diagnóstico</a>
                 </div>
             </div>
-
-            <!-- Contenedor Derecho: Estado y CTA -->
             <div class="flex items-center gap-4">
-                <!-- Estado Abierto/Cerrado (Desktop) -->
                 <div id="status-badge-desktop" class="hidden md:flex items-center px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-gray-800 border border-gray-700">
                     <span id="status-dot-desktop" class="w-2 h-2 rounded-full mr-2"></span>
                     <span id="status-text-desktop">Cargando...</span>
                 </div>
-
-                <!-- Botón CTA Desktop -->
                 <div class="hidden md:block">
-                    <!-- Efecto Neon Shadow al Hover -->
                     <a href="#diagnostico" class="bg-jmf-red hover:bg-red-700 text-white px-6 py-2 rounded font-bold transition transform hover:scale-105 shadow-lg hover:shadow-neon uppercase font-display text-sm tracking-wide">
                         Reservar Turno
                     </a>
                 </div>
             </div>
         </div>
-        
-        <!-- Estado Abierto/Cerrado (Mobile - Barra delgada debajo del nav) -->
         <div id="status-bar-mobile" class="md:hidden w-full py-1 text-center text-[10px] font-bold uppercase tracking-widest text-white bg-gray-800">
             Cargando estado...
         </div>
@@ -159,64 +135,48 @@
 
     <!-- HERO SECTION -->
     <header class="relative pt-24 pb-28 lg:pt-32 lg:pb-16 lg:min-h-[85vh] flex items-center bg-gray-900 overflow-hidden">
-        <!-- Imagen de fondo con Parallax -->
         <div id="parallax-container" class="absolute inset-0 z-0">
             <img id="parallax-img" src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=1974&auto=format&fit=crop" alt="Motor de auto deportivo alto rendimiento" class="parallax-image opacity-30">
             <div class="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-900/90 to-transparent"></div>
         </div>
-
         <div class="container mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
             <div class="text-white space-y-6">
-                <!-- Efecto Fade-in-up con retraso -->
                 <div class="fade-in-up" style="animation-delay: 0.1s;">
                     <div class="inline-block bg-jmf-red/20 border border-jmf-red/50 text-red-400 px-3 py-1 rounded text-xs font-bold uppercase tracking-widest mb-2">
                         <i class="fa-solid fa-microchip mr-1"></i> Tecnología de Precisión
                     </div>
                 </div>
-
                 <h1 class="font-display font-bold text-5xl lg:text-7xl leading-none fade-in-up pulse-text" style="animation-delay: 0.2s;">
                     DIAGNÓSTICO <br>
                     <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">EXPERTO</span>
                 </h1>
-                
                 <p class="text-gray-300 text-lg max-w-lg border-l-4 border-jmf-red pl-4 fade-in-up" style="animation-delay: 0.3s;">
                     Tu auto habla, nosotros escuchamos. Ahorra tiempo pre-cargando los síntomas online y obtén una solución transparente y profesional.
                 </p>
-                
-                <!-- Datos Estadísticos con Counters Animados -->
                 <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-800 fade-in-up" style="animation-delay: 0.4s;">
-                    <!-- Counter 1: Precisión -->
                     <div>
                         <span class="block text-2xl font-display font-bold text-white"><span id="counter1" data-target="98">0</span>%</span>
                         <span class="text-xs text-gray-400">Precisión en Fallas</span>
                     </div>
-                    <!-- Counter 2: Espera -->
                     <div>
                         <span class="block text-2xl font-display font-bold text-white"><span id="counter2" data-target="-45">0</span>m</span>
                         <span class="text-xs text-gray-400">Tiempo de Espera</span>
                     </div>
-                    <!-- Counter 3: Reparados -->
                     <div>
                         <span class="block text-2xl font-display font-bold text-white"><span id="counter3" data-target="5000">0</span>+</span>
                         <span class="text-xs text-gray-400">Motores Reparados</span>
                     </div>
                 </div>
-
-                <!-- Botones CTA principales -->
                 <div class="flex flex-col sm:flex-row gap-4 pt-4 fade-in-up" style="animation-delay: 0.5s;">
-                    <!-- Botón Principal con Hover NEON -->
                     <a href="#diagnostico" class="bg-jmf-red text-white px-8 py-4 rounded font-bold text-center shadow-lg hover:bg-red-700 transition uppercase font-display tracking-wider flex items-center justify-center gap-2 group hover:shadow-neon">
                         Pre-Diagnóstico
                         <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
                     </a>
-                    <!-- Botón secundario para el blog -->
                     <a href="#asesoramiento" class="border border-gray-600 text-white px-8 py-4 rounded font-bold text-center hover:bg-gray-800 transition uppercase font-display tracking-wider flex items-center justify-center gap-2">
                         <i class="fa-solid fa-book-reader text-jmf-red"></i> Centro de Asesoramiento
                     </a>
                 </div>
             </div>
-
-            <!-- Imagen Flotante / Elemento Visual -->
             <div class="hidden lg:block relative fade-in-up" style="animation-delay: 0.6s;">
                 <div class="absolute -inset-4 bg-jmf-red/20 rounded-full blur-3xl"></div>
                 <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=1600&auto=format&fit=crop" alt="Mecánico experto trabajando" class="relative rounded-xl shadow-2xl border-2 border-gray-700 transform rotate-2 hover:rotate-0 transition duration-500">
@@ -224,17 +184,14 @@
         </div>
     </header>
 
-    <!-- SECCIÓN DE ASESORAMIENTO (BLOG) - IMPLEMENTACIÓN DEL REQUERIMIENTO -->
+    <!-- SECCIÓN ASESORAMIENTO -->
     <section id="asesoramiento" class="py-20 bg-jmf-light">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="font-display font-bold text-4xl text-jmf-dark uppercase mb-4">Centro de <span class="text-jmf-red">Asesoramiento</span></h2>
                 <p class="text-gray-600 max-w-3xl mx-auto">Información precisa y rápida para que detectes a tiempo las señales de tu vehículo. ¡Un conductor informado reduce costos y riesgos!</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Artículo 1: Mantenimiento Predictivo (Frenos) -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition hover:shadow-2xl hover:scale-[1.02]">
                     <img src="https://placehold.co/600x400/DC2626/ffffff?text=FRENOS" alt="Revisión de pastillas y discos de freno" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -246,8 +203,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Artículo 2: Mantenimiento Preventivo (Batería y Alternador) -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition hover:shadow-2xl hover:scale-[1.02]">
                     <img src="https://placehold.co/600x400/111827/ffffff?text=BATER%C3%8DA" alt="Revisión de la batería del auto y terminales" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -259,8 +214,6 @@
                         </a>
                     </div>
                 </div>
-
-                <!-- Artículo 3: Mantenimiento del Motor (Líquidos) -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden transition hover:shadow-2xl hover:scale-[1.02]">
                     <img src="https://placehold.co/600x400/DC2626/ffffff?text=FLUIDOS" alt="Motor de auto con chequeo de nivel de aceite" class="w-full h-48 object-cover">
                     <div class="p-6">
@@ -272,59 +225,49 @@
                         </a>
                     </div>
                 </div>
-
             </div>
-            
             <div class="text-center mt-12">
                 <p class="text-gray-700 text-lg font-bold">¿Tienes dudas o detectaste una señal de alerta?</p>
                 <a href="#diagnostico" class="inline-flex items-center mt-3 bg-jmf-dark text-white font-bold py-3 px-6 rounded-full hover:bg-jmf-red transition uppercase tracking-wide shadow-md">
                     <i class="fa-solid fa-hand-pointer mr-2"></i> Pide tu Pre-Diagnóstico
                 </a>
             </div>
-
         </div>
     </section>
 
-    <!-- SECCIÓN DE SERVICIOS (LTV) -->
+    <!-- SERVICIOS -->
     <section class="py-20 bg-gray-100">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="font-display font-bold text-4xl text-jmf-dark uppercase mb-4">Servicios <span class="text-jmf-red">Integrales</span></h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">No solo diagnosticamos. Mantenemos el valor de tu vehículo a largo plazo con soluciones completas.</p>
             </div>
-
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Card 1 -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition border-b-4 border-transparent hover:border-jmf-red group">
                     <i class="fa-solid fa-laptop-code text-4xl text-gray-400 group-hover:text-jmf-red mb-4 transition"></i>
                     <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Diagnóstico Computarizado</h3>
                     <p class="text-sm text-gray-600">Escaneo profundo de ECU, sensores y módulos con equipos de última generación.</p>
                 </div>
-                <!-- Card 2 -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition border-b-4 border-transparent hover:border-jmf-red group">
                     <i class="fa-solid fa-oil-can text-4xl text-gray-400 group-hover:text-jmf-red mb-4 transition"></i>
                     <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Mecánica Ligera</h3>
                     <p class="text-sm text-gray-600">Cambio de aceite, filtros y fluidos. Mantenimiento programado (Service oficial).</p>
                 </div>
-                <!-- Card 3 -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition border-b-4 border-transparent hover:border-jmf-red group">
                     <i class="fa-solid fa-circle-stop text-4xl text-gray-400 group-hover:text-jmf-red mb-4 transition"></i>
                     <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Sistema de Frenos</h3>
                     <p class="text-sm text-gray-600">ABS, pastillas, discos y rectificación de precisión.</p>
                 </div>
-                <!-- Card 4 -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition border-b-4 border-transparent hover:border-jmf-red group">
                     <i class="fa-solid fa-car-burst text-4xl text-gray-400 group-hover:text-jmf-red mb-4 transition"></i>
                     <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Suspensión y Dirección</h3>
                     <p class="text-sm text-gray-600">Amortiguadores, tren delantero, alineación y balanceo 3D.</p>
                 </div>
-                <!-- Card 5 -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition border-b-4 border-transparent hover:border-jmf-red group">
                     <i class="fa-solid fa-snowflake text-4xl text-gray-400 group-hover:text-jmf-red mb-4 transition"></i>
                     <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Climatización</h3>
                     <p class="text-sm text-gray-600">Carga de gas, detección de fugas y reparación de compresores.</p>
                 </div>
-                <!-- Card 6 -->
                 <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition border-b-4 border-transparent hover:border-jmf-red group">
                     <i class="fa-solid fa-bolt text-4xl text-gray-400 group-hover:text-jmf-red mb-4 transition"></i>
                     <h3 class="font-display font-bold text-xl text-gray-900 mb-2">Electricidad y Electrónica</h3>
@@ -333,19 +276,15 @@
             </div>
         </div>
     </section>
-    
-    <!-- SECCIÓN DE TESTIMONIOS -->
+
+    <!-- TESTIMONIOS -->
     <section class="py-20 bg-gray-50 border-t border-b border-gray-200">
         <div class="container mx-auto px-4">
             <div class="text-center mb-10">
                 <h2 class="font-display font-bold text-4xl text-jmf-dark uppercase mb-2">La Voz de <span class="text-jmf-red">Nuestros Clientes</span></h2>
                 <p class="text-gray-600 max-w-2xl mx-auto">Nuestro compromiso es con el diagnóstico certero y el profesionalismo.</p>
             </div>
-
-            <!-- Carrusel de Testimonios (Simulado con scroll horizontal) -->
             <div id="testimonialCarousel" class="testimonial-carousel flex gap-8 pb-4">
-                
-                <!-- Testimonio 1 -->
                 <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-jmf-red hover:shadow-2xl transition">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex gap-1 text-yellow-500">
@@ -353,8 +292,7 @@
                         </div>
                         <i class="fa-solid fa-quote-right text-3xl text-gray-200"></i>
                     </div>
-                    <!-- Nombre del taller actualizado en el testimonio -->
-                    <p class="text-gray-700 italic mb-4">"Llevé mi camioneta con una falla que nadie encontraba. En LS Taller la detectaron con el escáner y la experiencia en menos de 1 hora. ¡Diagnóstico 100% preciso!"</p>
+                    <p class="text-gray-700 italic mb-4">"Llevé mi camioneta con una falla que nadie encontraba. En TALLER MECANICO ALBERO E HIJO la detectaron con el escáner y la experiencia en menos de 1 hora. ¡Diagnóstico 100% preciso!"</p>
                     <div class="flex items-center">
                         <img src="https://placehold.co/40x40/DC2626/ffffff?text=M" alt="Avatar Cliente" class="rounded-full mr-3">
                         <div>
@@ -363,8 +301,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Testimonio 2 -->
                 <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-jmf-red hover:shadow-2xl transition">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex gap-1 text-yellow-500">
@@ -381,8 +317,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Testimonio 3 -->
                 <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-jmf-red hover:shadow-2xl transition">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex gap-1 text-yellow-500">
@@ -390,8 +324,7 @@
                         </div>
                         <i class="fa-solid fa-quote-right text-3xl text-gray-200"></i>
                     </div>
-                    <!-- Nombre del taller actualizado en el testimonio -->
-                    <p class="text-gray-700 italic mb-4">"Necesitaba un service rápido y profesional para mi flota de vehículos. El equipo de LS Taller es eficiente y utiliza la tecnología para evitar errores costosos. Recomendados."</p>
+                    <p class="text-gray-700 italic mb-4">"Necesitaba un service rápido y profesional para mi flota de vehículos. El equipo de TALLER MECANICO ALBERO E HIJO es eficiente y utiliza la tecnología para evitar errores costosos. Recomendados."</p>
                     <div class="flex items-center">
                         <img src="https://placehold.co/40x40/DC2626/ffffff?text=E" alt="Avatar Cliente" class="rounded-full mr-3">
                         <div>
@@ -400,8 +333,6 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Testimonio 4 (Para forzar el scroll en mobile) -->
                 <div class="testimonial-card bg-white p-6 rounded-xl shadow-lg border-t-4 border-jmf-red hover:shadow-2xl transition">
                     <div class="flex justify-between items-start mb-4">
                         <div class="flex gap-1 text-yellow-500">
@@ -409,7 +340,7 @@
                         </div>
                         <i class="fa-solid fa-quote-right text-3xl text-gray-200"></i>
                     </div>
-                    <p class="text-gray-700 italic mb-4">"Tenía problemas con el ABS y la suspensión. En LS Taller me mostraron los reportes de diagnóstico y me explicaron cada paso. Confianza total en su trabajo."</p>
+                    <p class="text-gray-700 italic mb-4">"Tenía problemas con el ABS y la suspensión. En TALLER MECANICO ALBERO E HIJO me mostraron los reportes de diagnóstico y me explicaron cada paso. Confianza total en su trabajo."</p>
                     <div class="flex items-center">
                         <img src="https://placehold.co/40x40/DC2626/ffffff?text=J" alt="Avatar Cliente" class="rounded-full mr-3">
                         <div>
@@ -418,27 +349,20 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-            
             <p class="text-center text-sm text-gray-500 mt-6">Desliza para ver más opiniones certificadas.</p>
         </div>
     </section>
-    
-    <!-- FORMULARIO ACELERADOR (TRIAGE) -->
+
+    <!-- FORMULARIO DIAGNÓSTICO -->
     <section id="diagnostico" class="py-20 bg-jmf-dark relative overflow-hidden">
-        <!-- Decoración de fondo -->
         <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-jmf-red/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl"></div>
-
         <div class="container mx-auto px-4 relative z-10">
             <div class="flex flex-col lg:flex-row gap-12">
-                
-                <!-- Columna Info -->
                 <div class="lg:w-1/3 text-white">
                     <h2 class="font-display font-bold text-4xl mb-4">ACELERADOR DE <br><span class="text-jmf-red">DIAGNÓSTICO</span></h2>
                     <p class="text-gray-400 mb-8">Al completar este formulario, nuestros técnicos analizan los datos antes de que llegues. Esto reduce el tiempo de diagnóstico presencial drásticamente.</p>
-                    
                     <div class="space-y-6">
                         <div class="flex items-start gap-4">
                             <div class="bg-gray-800 p-3 rounded text-jmf-red"><i class="fa-solid fa-stopwatch text-xl"></i></div>
@@ -456,11 +380,8 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Columna Formulario -->
                 <div class="lg:w-2/3 bg-white rounded-xl shadow-2xl p-6 md:p-8">
                     <form id="triageForm" class="space-y-6">
-                        <!-- Sección Vehículo -->
                         <div class="border-b pb-4 mb-4">
                             <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
                                 <span class="bg-jmf-dark text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">1</span>
@@ -471,8 +392,6 @@
                                 <input type="number" id="inputKm" placeholder="Kilometraje aproximado" class="w-full bg-gray-50 border border-gray-300 p-3 rounded outline-none focus:ring-2 focus:ring-jmf-red transition triage-input" required>
                             </div>
                         </div>
-
-                        <!-- Sección Voz del Cliente (Contexto) -->
                         <div class="border-b pb-4 mb-4">
                             <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
                                 <span class="bg-jmf-dark text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">2</span>
@@ -480,45 +399,35 @@
                             </h3>
                             <div class="space-y-4">
                                 <textarea id="inputSymptoms" rows="3" placeholder="Describe el problema: ¿Qué ruidos hace? ¿Olores? ¿Vibra?" class="w-full bg-gray-50 border border-gray-300 p-3 rounded outline-none focus:ring-2 focus:ring-jmf-red transition triage-input" required></textarea>
-                                
-                                <!-- DROPDOWN MEJORADO CON CATEGORÍAS DE FALLAS COMUNES -->
                                 <select id="inputContext" class="w-full bg-gray-50 border border-gray-300 p-3 rounded outline-none focus:ring-2 focus:ring-jmf-red transition">
                                     <option value="" disabled selected>Contexto de la falla (Selecciona el más cercano)...</option>
-                                    
                                     <optgroup label="⚠️ FALLAS COMUNES EN EL ARRANQUE">
                                         <option value="no_arranca_gira">El motor gira pero no arranca (Motor de arranque bien)</option>
                                         <option value="no_arranca_nada">El auto no hace nada (no da contacto, no gira el motor)</option>
                                         <option value="arranca_lento">El arranque es lento/pesado (Batería baja)</option>
                                     </optgroup>
-                                    
                                     <optgroup label="🔧 PROBLEMAS DE RENDIMIENTO / MOTOR">
                                         <option value="falla_ralenti">Falla o inestabilidad en ralentí (Motor regulando)</option>
                                         <option value="pierde_potencia">Pérdida de potencia en aceleración o subidas</option>
                                         <option value="consumo_excesivo">Consumo excesivo de combustible/aceite</option>
                                         <option value="humo_escape">Humo visible por el escape (Color blanco, azul o negro)</option>
                                     </optgroup>
-                                    
                                     <optgroup label="🔊 RUIDOS / VIBRACIONES">
                                         <option value="ruido_frenar">Ruido (chillido/golpe) al frenar</option>
                                         <option value="ruido_direccion">Ruido al girar la dirección</option>
                                         <option value="vibracion_alta">Vibración a alta velocidad (>80 km/h)</option>
                                         <option value="ruido_motor">Ruido extraño proveniente del motor</option>
                                     </optgroup>
-
                                     <optgroup label="🌡️ TEMPERATURA / FLUIDOS">
                                         <option value="levanta_temp">Motor levanta temperatura / Se calienta</option>
                                         <option value="perdida_fluido">Se detecta pérdida de líquido (Aceite, refrigerante, etc.)</option>
                                     </optgroup>
-                                    
                                     <option value="falla_frio">Solo en frío (Mañanas)</option>
                                     <option value="falla_caliente">Solo en caliente</option>
                                     <option value="falla_intermitente">Falla aleatoria / Intermitente</option>
-
                                 </select>
                             </div>
                         </div>
-
-                        <!-- Datos Contacto -->
                         <div>
                             <h3 class="text-lg font-bold text-gray-800 mb-4 flex items-center gap-2">
                                 <span class="bg-jmf-dark text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">3</span>
@@ -529,10 +438,8 @@
                                 <input type="tel" id="inputPhone" placeholder="WhatsApp (Opcional)" class="w-full bg-gray-50 border border-gray-300 p-3 rounded outline-none focus:ring-2 focus:ring-jmf-red transition triage-input">
                             </div>
                         </div>
-
-                        <!-- Nombre actualizado para el botón WhatsApp -->
                         <button type="submit" class="w-full bg-jmf-red text-white font-display font-bold uppercase text-xl py-4 rounded shadow-lg hover:bg-red-700 hover:shadow-xl transition transform active:scale-95 flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar a LS Taller
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> Enviar a TALLER MECANICO ALBERO E HIJO
                         </button>
                     </form>
                 </div>
@@ -540,31 +447,25 @@
         </div>
     </section>
 
-    <!-- TRUST SIGNALS + UBICACIÓN -->
+    <!-- UBICACIÓN -->
     <section class="py-16 bg-white border-t border-gray-200">
         <div class="container mx-auto px-4 text-center">
-            
-            <!-- Marcas -->
             <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition duration-500 mb-16">
                 <i class="fa-brands fa-toyota text-4xl"></i>
-                <i class="fa-solid fa-car text-4xl"></i> <!-- Generic for Ford/Chev -->
+                <i class="fa-solid fa-car text-4xl"></i>
                 <i class="fa-brands fa-honda text-4xl"></i>
                 <i class="fa-solid fa-truck-pickup text-4xl"></i>
             </div>
-
-            <!-- Mapa / Ubicación -->
             <div class="bg-gray-100 rounded-xl p-8 max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
                 <div class="text-left">
                     <h3 class="font-display font-bold text-2xl text-jmf-dark">¿Dónde estamos?</h3>
                     <p class="text-gray-600 mb-2">Acércate al taller para la validación final.</p>
                     <div class="flex items-center gap-2 text-sm font-bold text-gray-700">
-                        <i class="fa-regular fa-clock text-jmf-red"></i> 
-                        <!-- Horario actualizado -->
+                        <i class="fa-regular fa-clock text-jmf-red"></i>
                         <span>08:00 - 12:00 hs | 14:00 - 18:00 hs | Sábado y Domingo Cerrado</span>
                     </div>
                 </div>
-                <!-- Link de Google Maps actualizado -->
-                <a href="https://maps.app.goo.gl/htwT9npGTBfr4pCw9" target="_blank" class="bg-gray-900 text-white px-6 py-3 rounded font-bold hover:bg-jmf-red transition flex items-center gap-2 shadow-lg w-full md:w-auto justify-center">
+                <a href="https://maps.app.goo.gl/QEFwjgSaKmTR9eyy5" target="_blank" class="bg-gray-900 text-white px-6 py-3 rounded font-bold hover:bg-jmf-red transition flex items-center gap-2 shadow-lg w-full md:w-auto justify-center">
                     <i class="fa-solid fa-map-location-dot"></i> Ver en Google Maps
                 </a>
             </div>
@@ -574,13 +475,12 @@
     <!-- FOOTER -->
     <footer class="bg-gray-900 text-gray-500 py-12 text-sm">
         <div class="container mx-auto px-4 text-center">
-            <!-- Nombre del taller actualizado en el footer -->
-            <p class="mb-4 text-white font-display font-bold text-xl">Taller JM Diagnóstico del Automotor</p>
+            <p class="mb-4 text-white font-display font-bold text-xl">TALLER MECANICO ALBERO E HIJO Diagnóstico del Automotor</p>
             <p>&copy; 2025 Todos los derechos reservados.</p>
         </div>
     </footer>
 
-    <!-- STICKY MOBILE CTA (Oculto en desktop) -->
+    <!-- CTA MÓVIL FIJO -->
     <div class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-3 md:hidden z-50 flex gap-2">
         <a href="#asesoramiento" class="flex-1 bg-gray-100 text-gray-800 font-bold py-3 rounded text-center text-sm border border-gray-300">
             <i class="fa-solid fa-book-reader text-jmf-red"></i> Asesoramiento
@@ -590,158 +490,96 @@
         </a>
     </div>
 
-    <!-- JAVASCRIPT LOGIC -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-
-            // --- FUNCIONES DE UTILIDAD ---
             function updateDateTime() {
                 return new Date();
             }
 
-            // --- 1. LÓGICA DE HORARIOS y STATUS ---
             function checkStatus() {
                 const now = updateDateTime();
                 const hours = now.getHours();
-                const day = now.getDay(); // 0 es Domingo, 1 es Lunes, etc.
-
-                // Horarios: Lunes a Sábado (08:00 a 12:00 y 14:00 a 18:00)
-                const isMorningOpen = (hours >= 8 && hours < 12); 
+                const day = now.getDay();
+                const isMorningOpen = (hours >= 8 && hours < 12);
                 const isAfternoonOpen = (hours >= 14 && hours < 18);
-
                 const isWorkingHour = isMorningOpen || isAfternoonOpen;
-                const isWorkingDay = day !== 0; // Cerrado domingos
-
+                const isWorkingDay = day !== 0;
                 const isOpen = isWorkingDay && isWorkingHour;
-                
-                // Mensajes de Cierre específicos
+
                 let closeTimeText = 'Cerrado';
                 if (isWorkingDay) {
-                    if (hours >= 12 && hours < 14) {
-                        closeTimeText = 'Volvemos a las 14:00 hs'; // Cerrado por almuerzo
-                    } else if (hours < 8) {
-                        closeTimeText = 'Abrimos a las 08:00 hs'; // Antes de abrir
-                    } else if (hours >= 18) {
-                        closeTimeText = 'Abrimos mañana 08:00 hs'; // Después de cerrar
-                    }
+                    if (hours >= 12 && hours < 14) closeTimeText = 'Volvemos a las 14:00 hs';
+                    else if (hours < 8) closeTimeText = 'Abrimos a las 08:00 hs';
+                    else if (hours >= 18) closeTimeText = 'Abrimos mañana 08:00 hs';
                 } else if (day === 0) {
-                    closeTimeText = 'Abrimos el Lunes 08:00 hs'; // Domingo
-
-                } else if (day === 6 && hours >= 18) {
-                    closeTimeText = 'Abrimos el Lunes 08:00 hs'; // Sábado después de cerrar
+                    closeTimeText = 'Abrimos el Lunes 08:00 hs';
                 }
-                
-                // Mensaje de apertura específico
+
                 let openTimeText = 'Cierra a las 12:00 hs';
-                if (isAfternoonOpen) {
-                    openTimeText = 'Cierra a las 18:00 hs';
-                }
+                if (isAfternoonOpen) openTimeText = 'Cierra a las 18:00 hs';
 
-                // Elementos de Status
                 const dotDesktop = document.getElementById('status-dot-desktop');
                 const textDesktop = document.getElementById('status-text-desktop');
                 const badgeDesktop = document.getElementById('status-badge-desktop');
                 const barMobile = document.getElementById('status-bar-mobile');
 
-                if (!dotDesktop || !textDesktop || !badgeDesktop || !barMobile) {
-                    console.error("Error: Faltan elementos de estado de apertura/cierre en el DOM.");
-                    return; 
-                }
-
-                // Limpiar clases previas
                 dotDesktop.classList.remove('bg-green-500', 'bg-red-500', 'pulse-dot');
                 textDesktop.classList.remove('text-green-400', 'text-red-400');
                 badgeDesktop.classList.remove('border-green-900/50', 'bg-green-900/20', 'border-red-900/50', 'bg-red-900/20');
 
                 if (isOpen) {
-                    const openText = 'Abierto Ahora';
-                    const openClass = 'bg-green-500';
-                    const mobileClass = 'bg-green-600';
-                    
-                    dotDesktop.className = `w-2 h-2 rounded-full mr-2 ${openClass} pulse-dot`;
-                    textDesktop.textContent = openText;
+                    dotDesktop.className = `w-2 h-2 rounded-full mr-2 bg-green-500 pulse-dot`;
+                    textDesktop.textContent = 'Abierto Ahora';
                     textDesktop.classList.add('text-green-400');
                     badgeDesktop.classList.add('border-green-900/50', 'bg-green-900/20');
-                    
-                    barMobile.textContent = `🟢 ${openText} (${openTimeText})`;
-                    barMobile.className = `md:hidden w-full py-1 text-center text-[10px] font-bold uppercase tracking-widest text-white ${mobileClass}`;
-
+                    barMobile.textContent = `🟢 Abierto Ahora (${openTimeText})`;
+                    barMobile.className = `md:hidden w-full py-1 text-center text-[10px] font-bold uppercase tracking-widest text-white bg-green-600`;
                 } else {
-                    const closedText = 'Cerrado';
-                    const closedClass = 'bg-red-500';
-                    const mobileClass = 'bg-red-600';
-
-                    dotDesktop.className = `w-2 h-2 rounded-full mr-2 ${closedClass}`;
-                    textDesktop.textContent = closedText;
+                    dotDesktop.className = `w-2 h-2 rounded-full mr-2 bg-red-500`;
+                    textDesktop.textContent = 'Cerrado';
                     textDesktop.classList.add('text-red-400');
                     badgeDesktop.classList.add('border-red-900/50', 'bg-red-900/20');
-
-                    barMobile.textContent = `🔴 ${closedText} (${closeTimeText})`;
-                    barMobile.className = `md:hidden w-full py-1 text-center text-[10px] font-bold uppercase tracking-widest text-white ${mobileClass}`;
+                    barMobile.textContent = `🔴 Cerrado (${closeTimeText})`;
+                    barMobile.className = `md:hidden w-full py-1 text-center text-[10px] font-bold uppercase tracking-widest text-white bg-red-600`;
                 }
             }
-            
-            // --- 2. CONTADORES ANIMADOS (Trust Signals) ---
+
             function animateCounter(id, start, target, duration) {
                 const obj = document.getElementById(id);
-                if (!obj) return; 
-
+                if (!obj) return;
                 let current = start;
                 const range = target - start;
-                const increment = range / (duration / 16); 
-                
-                const step = (timestamp) => {
+                const increment = range / (duration / 16);
+
+                const step = () => {
                     current += increment;
-                    
-                    if (target < 0) {
-                        if (current < target) {
-                             current = target;
-                        }
-                    } else {
-                        if (current > target) {
-                            current = target;
-                        }
-                    }
-
+                    if ((target > start && current > target) || (target < start && current < target)) current = target;
                     obj.textContent = target < 0 ? Math.ceil(current) : Math.floor(current);
-
                     if ((target > start && current < target) || (target < start && current > target)) {
                         requestAnimationFrame(step);
                     } else {
-                        obj.textContent = target < 0 ? Math.abs(target) : target; 
+                        obj.textContent = target < 0 ? Math.abs(target) : target;
                     }
                 };
-
                 requestAnimationFrame(step);
             }
 
             function startCounters() {
-                animateCounter('counter1', 0, 98, 1000); // 98%
-                animateCounter('counter2', 0, -45, 1200); // -45m
-                
-                const counter3El = document.getElementById('counter3');
-                if(counter3El) {
-                    animateCounter('counter3', 0, 5000, 1500);
-                }
+                animateCounter('counter1', 0, 98, 1000);
+                animateCounter('counter2', 0, -45, 1200);
+                animateCounter('counter3', 0, 5000, 1500);
             }
 
-
-            // --- 3. VALIDACIÓN FORMULARIO EN TIEMPO REAL ---
             const inputs = document.querySelectorAll('.triage-input');
-            
             inputs.forEach(input => {
                 input.addEventListener('input', function() {
                     if (this.value.length > 2) {
                         this.classList.add('input-valid');
                         this.classList.remove('input-invalid');
-                    } else {
-                        if(this.value.length === 0) {
-                            this.classList.remove('input-valid');
-                            this.classList.remove('input-invalid');
-                        }
+                    } else if (this.value.length === 0) {
+                        this.classList.remove('input-valid', 'input-invalid');
                     }
                 });
-
                 input.addEventListener('blur', function() {
                     if (this.value.length < 3 && this.hasAttribute('required')) {
                         this.classList.add('input-invalid');
@@ -750,19 +588,13 @@
                 });
             });
 
-            // --- 4. ENVÍO A WHATSAPP JM (Link y mensaje actualizados) ---
             document.getElementById('triageForm')?.addEventListener('submit', (e) => {
                 e.preventDefault();
                 const btn = e.target.querySelector('button[type="submit"]');
-                
-                if (!btn) return;
-                
-                // Efecto de carga
                 const originalContent = btn.innerHTML;
                 btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Preparando WhatsApp...';
                 btn.classList.add('opacity-75', 'pointer-events-none');
-                
-                // Captura de datos del formulario
+
                 const vehicle = document.getElementById('inputVehicle')?.value || 'N/A';
                 const km = document.getElementById('inputKm')?.value || 'N/A';
                 const symptoms = document.getElementById('inputSymptoms')?.value || 'N/A';
@@ -770,93 +602,59 @@
                 const contextLabel = contextSelect?.options[contextSelect.selectedIndex]?.text || 'No especificado';
                 const name = document.getElementById('inputName')?.value || 'Cliente sin nombre';
                 const phone = document.getElementById('inputPhone')?.value || 'No provisto';
-                
-                // Mensaje base solicitado por el usuario: "¡¡Hola JM DIAGNOSTICO AUTOMOTOR!!"
-                // Concatenamos la información del formulario al mensaje base.
-                const messageBase = "¡¡Hola LS Taller DIAGNOSTICO AUTOMOTOR!!";
 
+                const messageBase = "HOLA MECANICA ALBERTO E HIJOS!!";
                 const formDetails = `
 👤 *Contacto:* ${name}
 📞 *Teléfono:* ${phone}
-
 🚗 *Vehículo:* ${vehicle}
 🔢 *Km:* ${km}
-
 ⚠️ *Síntomas (Descripción Detallada):* ${symptoms}
 🔍 *Contexto de la falla (Selección):* ${contextLabel}
-
 Solicito turno para revisión.
 `;
-                
-                // Mensaje completo (Base + Detalles del Formulario)
                 const fullMessage = messageBase + formDetails;
-
-                // Número de WhatsApp y Link base (ya proporcionado y con el mensaje base incluido)
-                const whatsappBaseUrl = "https://api.whatsapp.com/send?phone=+541159353987&text=";
-                
-                // Codificamos solo la parte adicional del formulario que acabamos de construir.
-                // El link proporcionado por el usuario ya tenía codificada la primera parte.
-                const whatsappUrl = `${whatsappBaseUrl}${encodeURIComponent(fullMessage)}`;
-
+                const whatsappUrl = `https://api.whatsapp.com/send?phone=+541161507631&text=${encodeURIComponent(fullMessage)}`;
 
                 setTimeout(() => {
                     window.open(whatsappUrl, '_blank');
-                    
-                    // Feedback visual
                     btn.innerHTML = '<i class="fa-solid fa-check"></i> ¡Redirigiendo!';
                     btn.classList.remove('bg-jmf-red');
                     btn.classList.add('bg-green-600');
-                    
+
                     setTimeout(() => {
-                         // Reset botón después de unos segundos
                         btn.innerHTML = originalContent;
                         btn.classList.add('bg-jmf-red');
                         btn.classList.remove('bg-green-600', 'opacity-75', 'pointer-events-none');
-                        e.target.reset(); // Limpiar formulario
+                        e.target.reset();
                     }, 3000);
                 }, 1000);
             });
-            
-            // --- 5. PARALLAX EFFECT ---
+
             const parallaxImg = document.getElementById('parallax-img');
             const parallaxContainer = document.getElementById('parallax-container');
-            const parallaxSpeed = 0.2; 
-
+            const parallaxSpeed = 0.2;
             function updateParallax() {
                 if (!parallaxImg || !parallaxContainer) return;
-                
                 let scrollY = window.scrollY || window.pageYOffset;
-                const yPos = scrollY * parallaxSpeed; 
-                
+                const yPos = scrollY * parallaxSpeed;
                 parallaxImg.style.transform = `translate3d(0, ${yPos}px, 0)`;
             }
-
             window.addEventListener('scroll', updateParallax);
-            
-            // --- 6. INICIALIZACIÓN ---
-            
-            // 1. Inicia el chequeo de estado al cargar
-            checkStatus(); 
-            // Actualiza el estado cada 1 minuto
-            setInterval(checkStatus, 60000); 
 
-            // 2. Inicia los contadores animados
+            checkStatus();
+            setInterval(checkStatus, 60000);
             startCounters();
-            
-            // 3. Aplica las clases de animación de entrada con un pequeño timeout para asegurar la carga
             document.querySelectorAll('.fade-in-up').forEach(el => {
-                setTimeout(() => {
-                    el.style.animationPlayState = 'running';
-                }, 50);
+                setTimeout(() => el.style.animationPlayState = 'running', 50);
             });
-            
-            // 4. Inicializa la posición del Parallax al cargar la página
             updateParallax();
         });
     </script>
 </body>
 </html>
 "commit"
+
 
 
 
